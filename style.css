@@ -1,0 +1,290 @@
+body {
+    padding: 0;
+    width: auto;
+
+    font-family: 'Sofia Sans';
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+
+    background: url(img/background.jpeg) no-repeat center top / cover;
+}
+
+.container {
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+                    /* navigation */
+
+.nav-element {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.nav-element_logo {
+    font-size: 30px;
+}
+
+.nav-element_link {
+    display: flex;
+}
+
+.nav-element_link li {
+    display: inline;
+    padding-right: 35px;
+}
+
+.nav-element_link a {
+	color: white;
+
+	text-transform: uppercase;
+	text-decoration: none;
+	margin: auto;
+}
+
+.nav-element_link button {
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+    color: #fff;
+	
+    padding: 10px 20px;
+	
+    background: rgba(0,0,0,0);
+	border-style: solid;
+	border-color: #fff;
+
+
+	-webkit-transition: 1s ease;
+	cursor: pointer;
+}
+
+.nav-element_link button:hover {
+	background: white;
+	color: black;
+	box-shadow: inset 0 0 0 3px #fff;
+    border-color: none;
+
+	transition: 0.5s;
+}
+
+                    /* header */
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.header-text {
+    text-align: center;
+
+    margin-top: 350px;
+}
+
+.header-text h1 {
+    margin: 0;
+    padding-bottom: 15px;
+
+    font-size: 45px;
+    letter-spacing: 0.2em;
+}
+
+.header-text h3 {
+    margin: 0;
+
+    text-transform: none;
+    letter-spacing: 0.1em;
+}
+
+
+/* register/login form*/
+
+.form {
+    margin-top: 150px;
+    
+    display: flex;
+    justify-content: space-around;
+}
+
+.wrapper {
+    width: 400px;
+    padding: 50px 0;
+
+    background: rgba(0, 0, 0, .2);
+    border: 2px solid rgba(255,255,255, .3);
+    border-radius: 25px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+
+    display: flex;
+    justify-content: center;
+
+    text-transform: none;
+   
+    overflow: hidden;
+
+    transition:  transform .5s ease, height .2s ease;
+
+    transform: scale(0);
+}
+
+.wrapper.active-popup {
+    transform: scale(1);
+}
+
+.wrapper.active {
+    height: 500px;
+}
+
+.wrapper .icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+
+    background: #fff;
+    font-size: 2em;
+    color: #000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom-left-radius: 20px;
+
+    cursor: pointer;
+}
+
+.wrapper .form-box.login {
+    transition: transform .2s ease;
+    transform: translateX(0);
+}
+
+.wrapper.active .form-box.login {
+    transition: none;
+    transform: translateX(-400px);
+} 
+
+.wrapper.active-forgot .form-box.login {
+    transition: none;
+    transform: translateX(-400px);
+} 
+
+.wrapper .form-box.registration {
+    position: absolute;
+    transform: translateX(400px);
+}
+
+.wrapper.active .form-box.registration {
+    transition: transform .2s ease;
+    transform: translateX(0px);
+}
+
+.wrapper.active-forgot .form-box.registration {
+    transition: transform .2s ease;
+    transform: translateX(400px);
+}
+
+
+.form-box.forgot {
+    position: absolute;
+    transform: translateY(-400px);
+}
+
+.wrapper.active-forgot .form-box.forgot {
+    transition: transform .2s ease;
+    transform: translateY(0px);
+}
+
+.form-box h2 {
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid white;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+
+    background: transparent;
+
+    border: none;
+    outline: none;
+
+    font-size: 1em;
+    color: #fff;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    line-height: 57px;
+}
+
+.remember-forgot {
+    font-size: 13px;
+    font-weight: 500;
+   
+    margin: -15px 0 15px;
+
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.remember-forgot label input {
+    accent-color: #000;
+    margin-left: 0;
+}
+
+.remember-forgot a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.btn-login {
+    width: 100%;
+    height: 45px;
+    margin-top: 10px;
+
+    letter-spacing: 0.1em;
+	text-transform: uppercase;
+    font-size: 15px;
+
+    border: none;
+    outline: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+.login-register {
+   margin: 25px 0 10px;
+   
+    text-align: center;
+}
+
+.login-register a {
+     color: #fff;
+     text-decoration: none;
+ }
+
+ .login-register a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300;400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+   
+    <title>Страница</title>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="nav-element">
+                <div class="nav-element_logo">
+                    <i>Logo</i>
+                </div>
+                <div class="nav-element_link">
+                    <ul>
+                        <li>
+                            <a href="#" class="btm-window_popup">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btm-window_popup">About</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btm-window_popup">Services</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btm-window_popup">Contact</a>
+                        </li>
+                    </ul>
+                    <button class="nav-btn">Login</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+   <header class="">
+        <div class="container">
+            <div class="header-text">
+                <h1>Welcome</h1>
+                <h3>This page is created for an example</h3>
+            </div>
+        </div>
+    </header> 
+ 
+<!-- register/login form-->
+
+    <!-- <div class="window-popup">
+        <p>Select the "login" section</p>
+        <button>okay</button>
+    </div> -->
+    <div class="form">
+        <div class="wrapper">
+            <span class="icon-close">
+                <ion-icon name="close-outline"></ion-icon>
+            </span>
+
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="mail"></ion-icon>
+                        </span>
+                        <input type="email" required placeholder="E-mail">
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="lock-closed"></ion-icon>
+                        </span>
+                        <input type="password" required placeholder="Password">
+                    </div>
+                    <div class="remember-forgot">
+                        <label>
+                            <input type="checkbox">
+                            Remember me
+                        </label>
+                        <a href="#" class="btn-forgot">
+                            Forgot Password?
+                        </a>
+                    </div>
+                    <button type="submit" class="btn-login">
+                        Login
+                    </button>
+                    <div class="login-register">
+                        <p>
+                            Don't have an account?
+                            <a href="#" class="register-link">
+                                Register
+                            </a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form-box registration">
+                <h2>registration</h2>
+                <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </span>
+                    <input type="text" required placeholder="User name">
+                </div>                    
+                    <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                     </span>
+                    <input type="email" required placeholder="E-mail">
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                         <ion-icon name="lock-closed"></ion-icon>
+                     </span>
+                    <input type="password" required placeholder="Password">
+                </div>
+                <div class="remember-forgot">
+                    <label>
+                        <input type="checkbox">
+                            I agree to the termn & conditions
+                    </label>
+                </div>
+                <button type="submit" class="btn-login">
+                     Register
+                </button>
+                <div class="login-register">
+                    <p>
+                        Alredy have an account?
+                        <a href="#" class="login-link">
+                            Login
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="form-box forgot">
+                <h2>Forgot password</h2>
+                <form action="#">                   
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                     </span>
+                    <input type="email" required placeholder="E-mail">
+                </div>
+                <button type="submit" class="btn-login">
+                     Send
+                </button>
+                <div class="login-register">
+                    <p>
+                        <a href="#" class="back-login">
+                            Back to login
+                        </a>
+                    </p>
+                </div>
+            </div>
+            
+    </div>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
